@@ -2,21 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-28T16:22:54 EET" name="Default suite" finished-at="2022-02-28T16:22:54 EET" duration-ms="58">
+  <suite started-at="2022-02-28T16:28:48 EET" name="Default suite" finished-at="2022-02-28T16:28:48 EET" duration-ms="61">
     <groups>
     </groups>
-    <test started-at="2022-02-28T16:22:54 EET" name="Default test" finished-at="2022-02-28T16:22:54 EET" duration-ms="58">
+    <test started-at="2022-02-28T16:28:48 EET" name="Default test" finished-at="2022-02-28T16:28:48 EET" duration-ms="61">
       <class name="test.test.LoginTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.test.LoginTest@26abb146]" started-at="2022-02-28T16:22:54 EET" name="openBrowser" finished-at="2022-02-28T16:22:54 EET" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.test.LoginTest@15a34df2]" started-at="2022-02-28T16:28:47 EET" name="openBrowser" finished-at="2022-02-28T16:28:48 EET" duration-ms="68" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-at java.base/java.util.Properties.put(Properties.java:1334)
-at java.base/java.util.Properties.setProperty(Properties.java:229)
-at java.base/java.lang.System.setProperty(System.java:915)
-at test.test.TestBase.openBrowser(TestBase.java:43)
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:80)
+at test.test.TestBase.openBrowser(TestBase.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -38,20 +44,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginAsAdmin()[pri:1, instance:test.test.LoginTest@26abb146]" started-at="2022-02-28T16:22:54 EET" name="loginAsAdmin" finished-at="2022-02-28T16:22:54 EET" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="loginAsAdmin()[pri:1, instance:test.test.LoginTest@15a34df2]" started-at="2022-02-28T16:28:48 EET" name="loginAsAdmin" finished-at="2022-02-28T16:28:48 EET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-at java.base/java.util.Properties.put(Properties.java:1334)
-at java.base/java.util.Properties.setProperty(Properties.java:229)
-at java.base/java.lang.System.setProperty(System.java:915)
-at test.test.TestBase.openBrowser(TestBase.java:43)
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:80)
+at test.test.TestBase.openBrowser(TestBase.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,15 +85,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsAdmin -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.test.LoginTest@26abb146]" started-at="2022-02-28T16:22:54 EET" name="screenshotOnFailure" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1646058174685" status="SKIP">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.test.LoginTest@15a34df2]" started-at="2022-02-28T16:28:48 EET" name="screenshotOnFailure" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1646058528090" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:test.test.LoginTest@26abb146]" started-at="2022-02-28T16:22:54 EET" name="quitBrowser" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1646058174828" status="SKIP">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:test.test.LoginTest@15a34df2]" started-at="2022-02-28T16:28:48 EET" name="quitBrowser" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1646058528236" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

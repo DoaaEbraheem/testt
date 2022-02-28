@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 28 16:22:54 EET 2022</td>
+<td>Started on:</td><td>Mon Feb 28 16:28:48 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (58 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (61 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.test.LoginTest.openBrowser()'><b>openBrowser</b><br>Test class: test.test.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-	at java.base/java.util.Properties.put(Properties.java:1334)
-	at java.base/java.util.Properties.setProperty(Properties.java:229)
-	at java.base/java.lang.System.setProperty(System.java:915)
-	at test.test.TestBase.openBrowser(TestBase.java:43)
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at test.test.TestBase.openBrowser(TestBase.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,14 +105,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1096485705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1096485705'><pre>java.lang.NullPointerException
-	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-	at java.base/java.util.Properties.put(Properties.java:1334)
-	at java.base/java.util.Properties.setProperty(Properties.java:229)
-	at java.base/java.lang.System.setProperty(System.java:915)
-	at test.test.TestBase.openBrowser(TestBase.java:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace159475521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace159475521'><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at test.test.TestBase.openBrowser(TestBase.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,7 +137,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.test.LoginTest@26abb146</td></tr>
+<td>test.test.LoginTest@15a34df2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -143,8 +149,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='test.test.LoginTest.screenshotOnFailure()'><b>screenshotOnFailure</b><br>Test class: test.test.LoginTest</td>
 <td></td>
-<td>-1646058174</td>
-<td>test.test.LoginTest@26abb146</td></tr>
+<td>-1646058528</td>
+<td>test.test.LoginTest@15a34df2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -155,13 +161,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.test.LoginTest.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: test.test.LoginTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-	at java.base/java.util.Properties.put(Properties.java:1334)
-	at java.base/java.util.Properties.setProperty(Properties.java:229)
-	at java.base/java.lang.System.setProperty(System.java:915)
-	at test.test.TestBase.openBrowser(TestBase.java:43)
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at test.test.TestBase.openBrowser(TestBase.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,14 +190,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2084559714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2084559714'><pre>java.lang.NullPointerException
-	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-	at java.base/java.util.Properties.put(Properties.java:1334)
-	at java.base/java.util.Properties.setProperty(Properties.java:229)
-	at java.base/java.lang.System.setProperty(System.java:915)
-	at test.test.TestBase.openBrowser(TestBase.java:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1976752685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976752685'><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at test.test.TestBase.openBrowser(TestBase.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,7 +222,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.test.LoginTest@26abb146</td></tr>
+<td>test.test.LoginTest@15a34df2</td></tr>
 </table><p>
 </body>
 </html>

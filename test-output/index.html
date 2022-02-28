@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\doaa\AppData\Local\Temp\testng-eclipse--204498641\testng-customsuite.xml</span>
+                    <span>C:\Users\doaa\AppData\Local\Temp\testng-eclipse-1834592264\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,13 +130,16 @@
                   <a name="loginAsAdmin">
                   </a> <!-- loginAsAdmin -->
                   <span class="method-name">loginAsAdmin</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
-	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
-	at java.base/java.util.Properties.put(Properties.java:1334)
-	at java.base/java.util.Properties.setProperty(Properties.java:229)
-	at java.base/java.lang.System.setProperty(System.java:915)
-	at test.test.TestBase.openBrowser(TestBase.java:43)
+                  <div class="stack-trace">java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at test.test.TestBase.openBrowser(TestBase.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,7 +168,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\doaa\AppData\Local\Temp\testng-eclipse--204498641\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\doaa\AppData\Local\Temp\testng-eclipse-1834592264\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,15 +261,15 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginAsAdmin</span>
-                <span class="method-start">59 ms</span>
+                <span class="method-start">132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure</span>
-                <span class="method-start">65 ms</span>
+                <span class="method-start">138 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">208 ms</span>
+                <span class="method-start">284 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
