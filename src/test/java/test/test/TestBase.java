@@ -41,14 +41,13 @@ public class TestBase {
 
 		String chromeDriverPath = prop.getProperty("chromepath");
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		//driver = new ChromeDriver();
 		 ChromeOptions options = new ChromeOptions();
 		 driver = new ChromeDriver(options);
 		
-		driver.manage().deleteAllCookies();
+		
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
-		
+		driver.manage().deleteAllCookies();
 		initiEyes();
 	}
 
