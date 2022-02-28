@@ -15,6 +15,7 @@ public class LoginTest extends TestBase{
 	public void loginAsAdmin() throws IOException, InterruptedException {
 		prop = new Properties();
 		try {
+			
 			FileInputStream fis = new FileInputStream("resources\\test.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
