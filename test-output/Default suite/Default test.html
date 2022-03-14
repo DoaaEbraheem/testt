@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 28 16:28:48 EET 2022</td>
+<td>Started on:</td><td>Mon Mar 14 10:38:15 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (61 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (118 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.test.LoginTest.openBrowser()'><b>openBrowser</b><br>Test class: test.test.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
-	at test.test.TestBase.openBrowser(TestBase.java:45)
+<td><div><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsByClassName
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.applitools.eyes.selenium.Eyes.&lt;init&gt;(Eyes.java:60)
+	at test.test.TestBase.initiEyes(TestBase.java:54)
+	at test.test.TestBase.openBrowser(TestBase.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,17 +108,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace159475521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace159475521'><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
-	at test.test.TestBase.openBrowser(TestBase.java:45)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsByClassName
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace324169305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324169305'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsByClassName
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.applitools.eyes.selenium.Eyes.&lt;init&gt;(Eyes.java:60)
+	at test.test.TestBase.initiEyes(TestBase.java:54)
+	at test.test.TestBase.openBrowser(TestBase.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,9 +146,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsByClassName
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 more
 </pre></div></td>
-<td>0</td>
-<td>test.test.LoginTest@15a34df2</td></tr>
+<td>10</td>
+<td>test.test.LoginTest@2dfaea86</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -149,8 +165,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='test.test.LoginTest.screenshotOnFailure()'><b>screenshotOnFailure</b><br>Test class: test.test.LoginTest</td>
 <td></td>
-<td>-1646058528</td>
-<td>test.test.LoginTest@15a34df2</td></tr>
+<td>-1647247096</td>
+<td>test.test.LoginTest@2dfaea86</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -161,16 +177,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.test.LoginTest.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: test.test.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
-	at test.test.TestBase.openBrowser(TestBase.java:45)
+<td><div><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsByClassName
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.applitools.eyes.selenium.Eyes.&lt;init&gt;(Eyes.java:60)
+	at test.test.TestBase.initiEyes(TestBase.java:54)
+	at test.test.TestBase.openBrowser(TestBase.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -190,17 +209,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1976752685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1976752685'><pre>java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
-	at test.test.TestBase.openBrowser(TestBase.java:45)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsByClassName
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1360312263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1360312263'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsByClassName
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.applitools.eyes.selenium.Eyes.&lt;init&gt;(Eyes.java:60)
+	at test.test.TestBase.initiEyes(TestBase.java:54)
+	at test.test.TestBase.openBrowser(TestBase.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -220,9 +247,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsByClassName
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>test.test.LoginTest@15a34df2</td></tr>
+<td>test.test.LoginTest@2dfaea86</td></tr>
 </table><p>
 </body>
 </html>

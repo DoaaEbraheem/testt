@@ -15,6 +15,8 @@ import org.testng.asserts.SoftAssert;
 import com.applitools.eyes.selenium.Eyes;
 import com.github.javafaker.Faker;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TestBase {
 	protected static WebDriver driver;
@@ -39,13 +41,9 @@ public class TestBase {
 			e.printStackTrace();
 		}
 
-		String chromeDriverPath = prop.getProperty("chromepath");
-		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		 ChromeOptions options = new ChromeOptions();
-		 driver = new ChromeDriver(options);
-		
-		
-		driver.manage().window().maximize();
+		WebDriverManager.chromedriver().setup();
+	    driver=new ChromeDriver();
+	    driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		driver.manage().deleteAllCookies();
 		initiEyes();

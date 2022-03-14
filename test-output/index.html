@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\doaa\AppData\Local\Temp\testng-eclipse-1834592264\testng-customsuite.xml</span>
+                    <span>C:\Users\doaa\AppData\Local\Temp\testng-eclipse-74362326\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,16 +130,19 @@
                   <a name="loginAsAdmin">
                   </a> <!-- loginAsAdmin -->
                   <span class="method-name">loginAsAdmin</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver executable must exist: D:\project\test\resources\ChromeDriver\chromedriver.exe#
-	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
-	at test.test.TestBase.openBrowser(TestBase.java:45)
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsByClassName
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.applitools.eyes.selenium.Eyes.&lt;init&gt;(Eyes.java:60)
+	at test.test.TestBase.initiEyes(TestBase.java:54)
+	at test.test.TestBase.openBrowser(TestBase.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,6 +162,11 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsByClassName
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -168,7 +176,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\doaa\AppData\Local\Temp\testng-eclipse-1834592264\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\doaa\AppData\Local\Temp\testng-eclipse-74362326\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -261,15 +269,15 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginAsAdmin</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-start">10863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-start">10868 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">284 ms</span>
+                <span class="method-start">10918 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
