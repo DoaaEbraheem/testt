@@ -26,6 +26,7 @@ public class LoginTest extends TestBase{
 		String password = prop.getProperty("password");
 		loginpageObject = new LoginPage(driver);
 		loginpageObject.loginAsAdmin(email, password);
+	
 
 
 	}

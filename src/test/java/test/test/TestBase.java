@@ -45,7 +45,7 @@ public class TestBase {
 	    driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		driver.manage().deleteAllCookies();
-		initiEyes();
+	
 	}
 
 	// Initiate Eye apptlitool for visual testing
