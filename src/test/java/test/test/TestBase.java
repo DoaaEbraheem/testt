@@ -32,6 +32,7 @@ public class TestBase {
 	// Initiate the Chrome browser
 	@BeforeSuite
 	public void openBrowser() throws InterruptedException, Exception {
+		
 		prop = new Properties();
 		try {
 			fis = new FileInputStream("resources\\test.properties");
@@ -42,7 +43,9 @@ public class TestBase {
 
 		WebDriverManager.chromedriver().setup();
 	    driver=new ChromeDriver();
+	    initiEyes();
 	    driver.manage().window().maximize();
+	    
 		driver.get(prop.getProperty("url"));
 		driver.manage().deleteAllCookies();
 	
@@ -51,19 +54,19 @@ public class TestBase {
 	// Initiate Eye apptlitool for visual testing
 	private static void initiEyes() {
 		eyes = new Eyes();
-		eyes.setApiKey(prop.getProperty("api"));
+		eyes.setApiKey(prop.getProperty("applitools.api.key"));
 
 	}
 
 
 	// validate window design and elements
-/*	public void validateWindow() {
-		eyes.open(driver, "pharmazone", Thread.currentThread().getStackTrace()[2].getMethodName());
+	public void validateWindow() {
+		eyes.open(driver, "Easy buy", Thread.currentThread().getStackTrace()[2].getMethodName());
 		// get image for the whole screen
 		eyes.setForceFullPageScreenshot(true);
 		eyes.checkWindow();
 		eyes.close();
-	}*/
+	}
 
 	// taking screenshot for failures
 	@AfterMethod
@@ -79,7 +82,7 @@ public class TestBase {
 	@AfterSuite
 	public void quitBrowser() {
 		driver.quit();
-		// eyes.abortIfNotClosed();
+		eyes.abortIfNotClosed();
 	}
 
 }
