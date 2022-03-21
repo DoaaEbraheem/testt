@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 import com.applitools.eyes.selenium.Eyes;
@@ -43,12 +44,17 @@ public class TestBase {
 
 		WebDriverManager.chromedriver().setup();
 	    driver=new ChromeDriver();
-	    initiEyes();
+	   
 	    driver.manage().window().maximize();
 	    
 		driver.get(prop.getProperty("url"));
+		
 		driver.manage().deleteAllCookies();
 	
+	}
+	@BeforeMethod
+	public void eee() {
+		 initiEyes();
 	}
 
 	// Initiate Eye apptlitool for visual testing

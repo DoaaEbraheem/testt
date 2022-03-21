@@ -9,6 +9,7 @@
           <include name="quitBrowser"/>
           <include name="search"/>
           <include name="openBrowser"/>
+          <include name="eee"/>
         </methods>
       </class> <!-- test.test.SearchTest -->
     </classes>
