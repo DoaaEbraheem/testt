@@ -9,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
+
+import com.applitools.eyes.MatchLevel;
 import com.applitools.eyes.selenium.Eyes;
 import com.github.javafaker.Faker;
 
@@ -41,7 +42,7 @@ public class TestBase {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-
+		 initiEyes();
 		WebDriverManager.chromedriver().setup();
 	    driver=new ChromeDriver();
 	   
@@ -52,10 +53,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 	
 	}
-	@BeforeMethod
-	public void eee() {
-		 initiEyes();
-	}
+	
 
 	// Initiate Eye apptlitool for visual testing
 	private static void initiEyes() {
@@ -68,7 +66,8 @@ public class TestBase {
 	// validate window design and elements
 	public void validateWindow() {
 		eyes.open(driver, "Easy buy", Thread.currentThread().getStackTrace()[2].getMethodName());
-		// get image for the whole screen
+		
+		eyes.setMatchLevel(MatchLevel.CONTENT);
 		eyes.setForceFullPageScreenshot(true);
 		eyes.checkWindow();
 		eyes.close();
